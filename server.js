@@ -16,7 +16,7 @@ const connectDB=require('./config/dbconfig')
 
 const app=express();
 connectDB();//to create db connect
-app.use(cors)
+app.use(cors())
 
 app.use(express.json());
 const PORT=3000
